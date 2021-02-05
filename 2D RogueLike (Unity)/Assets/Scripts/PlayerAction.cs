@@ -62,10 +62,7 @@ namespace ProgrammingPractice
                 {
                     var shot = hit.collider.GetComponent<IInteract>();
                     //if(shot == null) return;
-                    if(shot == null){
-                        print("shot is null");
-                        return;
-                    }
+                    if(shot == null) return;
                     shot.shot();                    
                     
                     Rigidbody2D hitRB = hit.rigidbody;
