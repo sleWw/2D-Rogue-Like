@@ -12,9 +12,7 @@ namespace ProgrammingPractice
             spriteRenderer = this.GetComponent<SpriteRenderer>();
         }
         
-        public void shot(){
-            spriteRenderer.color = Random.ColorHSV(0f, 1f, 1f ,1f ,0.5f, 1f);
-        }
+        public void shot() => spriteRenderer.color = Random.ColorHSV(0f, 1f, 1f ,1f ,0.5f, 1f);
 
         public void Interact(){
             print("I ARE NEUTRAL DONT FUK WITH ME!!!");
