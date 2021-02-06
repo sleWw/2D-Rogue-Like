@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxDistanceDelta: 15
-  _dashLengthInSeconds: 0.1
+  _dashLengthInSeconds: 0.3
 --- !u!1 &1868317257
 GameObject:
   m_ObjectHideFlags: 0

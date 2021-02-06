@@ -10,9 +10,14 @@ namespace ProgrammingPractice
         public float moveSpeed;
         GameObject _thisGameObject;
         Vector2 move;
+        
+        Dash dash;
+        
+
 
         void Awake()
         {
+            dash = this.GetComponent<Dash>();
             _thisGameObject = this.gameObject;
 
         }
@@ -26,8 +31,13 @@ namespace ProgrammingPractice
 
         void FixedUpdate()
         {
-            rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+            if(dash.currentPlayerState == Dash.PlayerState.notDashing){
+                PlayerMove();
+            }
 
+        }
+        void PlayerMove(){
+            rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
         }
     }
 }
