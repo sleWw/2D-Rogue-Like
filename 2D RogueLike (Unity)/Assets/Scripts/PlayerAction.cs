@@ -14,7 +14,11 @@ namespace ProgrammingPractice
         public Camera mainCam;
         GameObject triggeredObject;
         Vector2 mousePosition;
-        Vector2 direction;
+        public Vector2 direction;
+
+        //Change Color When Targeted Variables
+        Color defaultColor;
+        Color newColor = Color.red;
 
         Vector2 move;
         bool onTrigger = false;
@@ -46,6 +50,8 @@ namespace ProgrammingPractice
             if(Input.GetButtonDown("Fire2")){
                 RaycastShoot();
             }
+
+            
         
         }
         void InteractCheck(){

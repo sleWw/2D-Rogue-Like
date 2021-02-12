@@ -10,6 +10,12 @@ namespace ProgrammingPractice
         void Interact();
 
         void shot();
+
+    }
+    
+        interface iTargetable{
+        void ChangeColor();
+        void DefaultColor();
     }
 
     /*public class Interactable : MonoBehaviour

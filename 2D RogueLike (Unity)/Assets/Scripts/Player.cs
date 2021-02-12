@@ -9,10 +9,10 @@ namespace ProgrammingPractice
         public Rigidbody2D rb;
         public float moveSpeed;
         GameObject _thisGameObject;
-        Vector2 move;
-        
+        Vector2 move;        
         Dash dash;
-        
+
+
 
 
         void Awake()
