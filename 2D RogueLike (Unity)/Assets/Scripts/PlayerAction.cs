@@ -16,6 +16,9 @@ namespace ProgrammingPractice
         Vector2 mousePosition;
         public Vector2 direction;
 
+        //LineRenderer for Pierce
+        LineRenderer lineRenderer;
+
         //Change Color When Targeted Variables
         Color defaultColor;
         Color newColor = Color.red;
@@ -36,6 +39,7 @@ namespace ProgrammingPractice
 
         void Awake()
         {
+            lineRenderer = this.gameObject.GetComponent<LineRenderer>();
             _thisGameObject = this.gameObject;
 
         }
@@ -43,38 +47,37 @@ namespace ProgrammingPractice
         {
             mousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
             direction = mousePosition - rb.position;
-            //float angle = Mathf.Atan2(direction.y, direction.x);
-            if(onTrigger && Input.GetButtonDown("Fire1")){
+            if(onTrigger && Input.GetKey(KeyCode.E)){
             InteractCheck();
             }
             if(Input.GetButtonDown("Fire2")){
                 RaycastShoot();
             }
 
-            
+
+
         
         }
         void InteractCheck(){
-          if(onTrigger && Input.GetButtonDown("Fire1"))
-            {
-                var interactable = triggeredObject.GetComponent<IInteract>();
-                if(interactable == null) return;
-                interactable.Interact();
-            }  
+            var interactable = triggeredObject.GetComponent<IInteract>();
+            if(interactable == null) return;
+            interactable.Interact();  
         }
         void RaycastShoot(){
                 RaycastHit2D hit = Physics2D.Raycast(rb.position, direction, rayDistance);
                 if(hit)
                 {
+                    //Checks to see if raycast hits first object
                     var shot = hit.collider.GetComponent<IInteract>();
-                    //if(shot == null) return;
                     if(shot == null) return;
-                    shot.shot();                    
-                    
+                    shot.shot();
+
+                    //Checks if an Object is behind the first hit object for a piercing effect
                     Rigidbody2D hitRB = hit.rigidbody;
                     RaycastHit2D pierce = Physics2D.Raycast(hitRB.position, direction, pierceDistance);
                     if(pierce){
                         var pierceShot = pierce.transform.GetComponent<IInteract>();
+                        //transformPierce = pierce.transform;
                         if(pierceShot == null) return;
                         pierceShot.shot();
                     }

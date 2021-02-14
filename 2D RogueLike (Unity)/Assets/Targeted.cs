@@ -8,18 +8,21 @@ namespace ProgrammingPractice
     {
         iTargetable target;
         GameObject thisGameObject;
-        GameObject otherGameObject;
+        public GameObject otherGameObject;
+        public bool objectTargeted = false;
 
         void OnTriggerStay2D(Collider2D coll){
             otherGameObject = coll.gameObject;
             target = otherGameObject.GetComponent<iTargetable>();
             if(target == null) return;
             target.ChangeColor();
+            objectTargeted = true;
         }
         void OnTriggerExit2D(){
             target = otherGameObject.GetComponent<iTargetable>();
             if(target == null) return;
             target.DefaultColor();  
+            objectTargeted = false;
         }
 
 

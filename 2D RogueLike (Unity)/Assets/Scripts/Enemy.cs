@@ -7,7 +7,7 @@ namespace ProgrammingPractice
     public class Enemy : MonoBehaviour, IInteract, iTargetable
     {
         SpriteRenderer spriteRenderer;
-        Color newColor = Color.black;
+        Color newColor = Color.yellow;
         public Color defaultColor;
 
 
@@ -22,10 +22,10 @@ namespace ProgrammingPractice
         }
         public void shot() => spriteRenderer.color = Random.ColorHSV(0f, 1f, 1f ,1f ,0.5f, 1f);
         public void ChangeColor(){
-            spriteRenderer.color = newColor;         
+            //spriteRenderer.color = newColor;         
         }
         public void DefaultColor(){
-            spriteRenderer.color = defaultColor;
+            //spriteRenderer.color = defaultColor;
         }
 
             
