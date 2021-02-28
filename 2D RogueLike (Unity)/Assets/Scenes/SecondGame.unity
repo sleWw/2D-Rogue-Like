@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 843338746}
   - component: {fileID: 843338745}
   - component: {fileID: 843338747}
+  - component: {fileID: 843338748}
   m_Layer: 0
   m_Name: Raycast Target (7)
   m_TagString: Untagged
@@ -334,6 +335,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &843338748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843338744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &854697505
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +440,7 @@ GameObject:
   - component: {fileID: 990354655}
   - component: {fileID: 990354654}
   - component: {fileID: 990354656}
+  - component: {fileID: 990354657}
   m_Layer: 0
   m_Name: Raycast Target (4)
   m_TagString: Untagged
@@ -515,6 +529,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &990354657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990354653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1075371891
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +958,7 @@ GameObject:
   - component: {fileID: 1476665131}
   - component: {fileID: 1476665130}
   - component: {fileID: 1476665132}
+  - component: {fileID: 1476665133}
   m_Layer: 0
   m_Name: Raycast Target (6)
   m_TagString: Untagged
@@ -1020,6 +1047,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1476665133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476665129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1548133879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayCastEnd: {x: 0.07, y: 0, z: 0}
   rayCastOrigin: {x: -0.03, y: 0, z: 0}
+  rayCastEndPoint: {x: 0, y: 0, z: 0}
   magnitude: 10
 --- !u!212 &1577252805
 SpriteRenderer:
@@ -1370,6 +1410,7 @@ GameObject:
   - component: {fileID: 1583907816}
   - component: {fileID: 1583907815}
   - component: {fileID: 1583907817}
+  - component: {fileID: 1583907818}
   m_Layer: 0
   m_Name: Raycast Target (5)
   m_TagString: Untagged
@@ -1458,6 +1499,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1583907818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583907814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1673566804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1634,7 @@ GameObject:
   - component: {fileID: 1682618425}
   - component: {fileID: 1682618424}
   - component: {fileID: 1682618426}
+  - component: {fileID: 1682618427}
   m_Layer: 0
   m_Name: Raycast Target (8)
   m_TagString: Untagged
@@ -1669,6 +1723,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1682618427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682618423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1904994631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1746,7 @@ GameObject:
   - component: {fileID: 1904994633}
   - component: {fileID: 1904994632}
   - component: {fileID: 1904994634}
+  - component: {fileID: 1904994635}
   m_Layer: 0
   m_Name: Raycast Target (3)
   m_TagString: Untagged
@@ -1768,6 +1835,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1904994635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904994631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2110189734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1858,7 @@ GameObject:
   - component: {fileID: 2110189736}
   - component: {fileID: 2110189735}
   - component: {fileID: 2110189737}
+  - component: {fileID: 2110189738}
   m_Layer: 0
   m_Name: Raycast Target (9)
   m_TagString: Untagged
@@ -1867,3 +1947,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &2110189738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110189734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef797e69e9409db4fa898369fd564a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

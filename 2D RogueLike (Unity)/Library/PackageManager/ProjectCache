@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637501201757585352
-    m_Hash: 2838798205
+      ticks: 637501245481029794
+    m_Hash: 2677021523
   m_LockFileStatus:
     m_FilePath: D:/01 GAME MAKING/Unity/2D RogueLike Game/2D-Rogue-Like/2D RogueLike
       (Unity)/Packages/packages-lock.json
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637501202216087952
+      ticks: 637501245948723934
     m_Hash: 3198298308
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
