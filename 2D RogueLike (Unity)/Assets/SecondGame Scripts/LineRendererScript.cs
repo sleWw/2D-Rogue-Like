@@ -9,6 +9,9 @@ namespace ProgrammingPractice
         RaycastTesting raycastTesting;
         LineRenderer lineRenderer;
 
+        public float lineWidth;
+
+
         void Awake(){
             lineRenderer = this.GetComponent<LineRenderer>();   
             raycastTesting = this.GetComponent<RaycastTesting>();         
@@ -18,7 +21,8 @@ namespace ProgrammingPractice
         {
             lineRenderer.SetPosition(0, raycastTesting.rayCastOrigin);
             lineRenderer.SetPosition(1, raycastTesting.rayCastEnd);
-
+            lineRenderer.startWidth = lineWidth;
+            lineRenderer.endWidth = lineWidth;
             
         
         }

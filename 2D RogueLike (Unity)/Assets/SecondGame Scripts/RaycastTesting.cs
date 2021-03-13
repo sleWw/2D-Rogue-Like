@@ -17,10 +17,6 @@ namespace ProgrammingPractice
         RaycastHit2D cachedRaycast;
         RaycastHit2D emptyRaycast;
 
-        void OnCollisionEnter2D(){
-            print("print");
-        }
-
         void Awake(){
             _transform = this.transform;
             circleColl = this.GetComponent<CircleCollider2D>();
@@ -35,8 +31,8 @@ namespace ProgrammingPractice
         void Update()
         {
             //This keeps the LineRenderer infront of all objects
-            rayCastEnd.z = -0.1f;
             rayCastOrigin.z = -0.1f;
+            rayCastEnd.z = -0.1f;
 
             rayCastOrigin.y = _transform.position.y;
             rayCastOrigin.x = _transform.position.x;
